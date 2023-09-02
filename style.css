@@ -1,0 +1,109 @@
+:root {
+	--color01: #2a9d8f;
+	--color02: #e9c46a;
+	--color03: #f4a261;
+	--contrast-color: white;
+}
+
+body {
+    margin: 0;
+  }
+  
+ .container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+  }
+  .container header, main {
+    padding: 0 2rem 0 2rem;
+  }
+  .header a {
+   text-decoration: none;
+      color: var(--contrast-color);
+  }
+  .header a:hover{
+      color: var(--color02);
+  }
+  .header a:active {
+      color: var(--color03)
+  }
+  .header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+          align-items: flex-end;
+    background: var(--color01);
+    font-family: "Roboto", sans-serif;
+  }
+  .header__logo {
+    display: flex;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+          align-items: flex-end;
+  }
+  .header__logo > * {
+    padding: 0 0.1rem;
+    color: white;
+  }
+  .header__logo__title {
+      font-style: italic;
+      font-size: smaller;
+  }
+  .header__nav {
+    display: flex;
+  }
+  .header__nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__nav ul li {
+    margin-right: 1rem;
+    list-style: none;
+    display: list-item;
+  }
+  
+  main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  h1 {
+    font-size: 50px;
+    color: var(--color01);
+  }
+  .items {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+  }
+  h2 span {
+      font-size: 0.8rem;
+   color: var(--contrast-color);
+  }
+  article {
+      width: 300px;
+      border: solid 1px var(--color02);
+      border-radius: 1rem;
+      box-shadow: 3px -3px 10px -2px rgba(163, 157, 157, 0.35);
+      padding: 0.5rem;
+  }
+  article img {
+      width: 100%;
+      max-height: 200px;
+  }
+  .items a {
+      position: relative;
+      left: 100px;
+      background-color: var(--color01);
+      padding: 0.3rem;
+      border-radius: 0.3rem;
+      color: var(--contrast-color);
+  }
+  
+  article:has(span) {
+      background-color: var(--color02);
+  }
